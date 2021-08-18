@@ -13,6 +13,7 @@
 		FC1831BA263453EB00C84233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1831B8263453EB00C84233 /* Main.storyboard */; };
 		FC1831BC263453ED00C84233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1831BB263453ED00C84233 /* Assets.xcassets */; };
 		FC1831BF263453ED00C84233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1831BD263453ED00C84233 /* LaunchScreen.storyboard */; };
+		FC51C88626CD8C7D004A5156 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC51C88526CD8C7D004A5156 /* Session.swift */; };
 		FC780E572642C228008195DA /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC780E562642C228008195DA /* FriendsTableViewController.swift */; };
 		FC780E592642C23F008195DA /* MyGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC780E582642C23F008195DA /* MyGroupTableViewController.swift */; };
 		FC780E5B2642C24F008195DA /* AllGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC780E5A2642C24F008195DA /* AllGroupTableViewController.swift */; };
@@ -42,6 +43,7 @@
 		FC1831BB263453ED00C84233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1831BE263453ED00C84233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1831C0263453ED00C84233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC51C88526CD8C7D004A5156 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FC780E562642C228008195DA /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		FC780E582642C23F008195DA /* MyGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupTableViewController.swift; sourceTree = "<group>"; };
 		FC780E5A2642C24F008195DA /* AllGroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupTableViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				FC780E652642C2D2008195DA /* Group.swift */,
 				FC780E672642C2EE008195DA /* DataStorage.swift */,
 				FC780E692642C311008195DA /* News.swift */,
+				FC51C88526CD8C7D004A5156 /* Session.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				FC780E752642C405008195DA /* FriendsTableViewCell.swift in Sources */,
 				FC780E602642C293008195DA /* FotoFriendsCollectionViewController.swift in Sources */,
 				FC780E662642C2D2008195DA /* Group.swift in Sources */,
+				FC51C88626CD8C7D004A5156 /* Session.swift in Sources */,
 				FC780E86264D5D38008195DA /* CustomCollectionViewCell.swift in Sources */,
 				FC1831B3263453EB00C84233 /* AppDelegate.swift in Sources */,
 				FC780E712642C3D3008195DA /* GroupTableViewCell.swift in Sources */,
