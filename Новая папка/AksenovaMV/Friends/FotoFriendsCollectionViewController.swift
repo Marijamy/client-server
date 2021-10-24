@@ -11,8 +11,6 @@ private let reuseIdentifier = "Cell"
 
 class FotoFriendsCollectionViewController: UICollectionViewController {
     
-    let friendsService = FriendsAPI()
-    
     let FromArrayToFoto = "FotoSegue"
     
     private var fotoArray = [UIImage]()
@@ -25,11 +23,6 @@ class FotoFriendsCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
 
         self.collectionView.register(UINib(nibName: "FotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-        
-        friendsService.getFriends { friends in
-            
-            print("получили друзей")
-        }
     }
 
     /*

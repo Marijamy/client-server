@@ -7,7 +7,6 @@
 
 import UIKit
 import WebKit
-import Alamofire
 
 class ViewController: UIViewController {
 
@@ -23,6 +22,8 @@ class ViewController: UIViewController {
         }
     }
 
+    
+    
     let fromLoginToFriendsSegue = "FromLoginToFriends"
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,15 +32,28 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWasShown), name: UIResponder.keyboardDidShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        var urlComponents = URLComponents()
+                urlComponents.scheme = "https"
+                urlComponents.host = "oauth.vk.com"
+                urlComponents.path = "/authorize"
+                urlComponents.queryItems = [
+                    URLQueryItem(name: "client_id", value: "7961448"),
+                    URLQueryItem(name: "display", value: "mobile"),
+                    URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
+                    URLQueryItem(name: "scope", value: "262150"),
+                    URLQueryItem(name: "response_type", value: "code"),
+                    URLQueryItem(name: "v", value: "5.68")
+                ]
+                
+                let request = URLRequest(url: urlComponents.url!)
+                
+                webView.load(request)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        webView.navigationDelegate = self
-        if let request = getAuthorizeRequest() {
-            webView.load(request)
-        }
+        // Do any additional setup after loading the view.
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -63,24 +77,11 @@ class ViewController: UIViewController {
         let contentInsets = UIEdgeInsets.zero
         loginScrollView?.contentInset = contentInsets
     }
-    
-    func getAuthorizeRequest() -> URLRequest? {
-        var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
-        urlComponents.host = "oauth.vk.com"
-        urlComponents.path = "/authorize"
+
+    @IBAction func pressButton(button: UIButton) {
         
-        urlComponents.queryItems = [
-            URLQueryItem(name: "client_id", value: "7961448"),
-            URLQueryItem(name: "display", value: "mobile"),
-            URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
-            URLQueryItem(name: "scope", value: "262150"),
-            URLQueryItem(name: "response_type", value: "code"),
-            URLQueryItem(name: "v", value: "5.68")
-        ]
-        guard let url = urlComponents.url else { return nil }
-        let request = URLRequest(url: url)
-        return request
+        performSegue(withIdentifier: fromLoginToFriendsSegue, sender: nil)
+        
     }
     
 }
@@ -88,9 +89,7 @@ class ViewController: UIViewController {
 extension ViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         
-        guard let url = navigationResponse.response.url,
-                url.path == "/blank.html",
-                let fragment = url.fragment  else {
+        guard let url = navigationResponse.response.url, url.path == "/blank.html", let fragment = url.fragment  else {
             decisionHandler(.allow)
             return
         }
@@ -104,20 +103,11 @@ extension ViewController: WKNavigationDelegate {
                 let value = param[1]
                 dict[key] = value
                 return dict
-            }
-        print(params)
-        
-        let token = params["access_token"]
-        let userID = params["user_id"]
-        
-        print(token,userID)
-        
-        MySession.shared.userId = Int(userID ?? "")
-        MySession.shared.token = token
-        
-        if token != nil {
-            performSegue(withIdentifier: fromLoginToFriendsSegue, sender: self)
         }
+        
+        guard let token = params["access_token"] else {return}
+        
+         MySession.shared.token = token
         
         decisionHandler(.cancel)
     }

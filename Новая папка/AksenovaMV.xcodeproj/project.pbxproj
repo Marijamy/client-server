@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,7 +33,10 @@
 		FC780E86264D5D38008195DA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC780E84264D5D38008195DA /* CustomCollectionViewCell.swift */; };
 		FC780E87264D5D38008195DA /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC780E85264D5D38008195DA /* CustomCollectionViewCell.xib */; };
 		FC9E71002700BB38008D1AB5 /* MySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E70FF2700BB38008D1AB5 /* MySession.swift */; };
+<<<<<<< HEAD
 		FC9E710427123223008D1AB5 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E710327123223008D1AB5 /* FriendsAPI.swift */; };
+=======
+>>>>>>> parent of 8ae9743 (lesson2-24-10-2021)
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +69,10 @@
 		FC780E84264D5D38008195DA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC780E85264D5D38008195DA /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		FC9E70FF2700BB38008D1AB5 /* MySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySession.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		FC9E710327123223008D1AB5 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> parent of 8ae9743 (lesson2-24-10-2021)
 		FDA83F96B422CF67D084DC44 /* Pods-AksenovaMV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AksenovaMV.debug.xcconfig"; path = "Target Support Files/Pods-AksenovaMV/Pods-AksenovaMV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +94,7 @@
 				FDA83F96B422CF67D084DC44 /* Pods-AksenovaMV.debug.xcconfig */,
 				3EC70F83CEEE7F552683843F /* Pods-AksenovaMV.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -178,7 +185,6 @@
 				FC780E672642C2EE008195DA /* DataStorage.swift */,
 				FC780E692642C311008195DA /* News.swift */,
 				FC9E70FF2700BB38008D1AB5 /* MySession.swift */,
-				FC9E710327123223008D1AB5 /* FriendsAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,7 +200,6 @@
 				FC1831AB263453EB00C84233 /* Sources */,
 				FC1831AC263453EB00C84233 /* Frameworks */,
 				FC1831AD263453EB00C84233 /* Resources */,
-				7F8E2EB44B5C0A2506E6C324 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,23 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7F8E2EB44B5C0A2506E6C324 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AksenovaMV/Pods-AksenovaMV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AksenovaMV/Pods-AksenovaMV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AksenovaMV/Pods-AksenovaMV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CBB9D7ABC229E38265DD661B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,7 +304,10 @@
 				FC780E6A2642C311008195DA /* News.swift in Sources */,
 				FC780E572642C228008195DA /* FriendsTableViewController.swift in Sources */,
 				FC780E642642C2C4008195DA /* User.swift in Sources */,
+<<<<<<< HEAD
 				FC9E710427123223008D1AB5 /* FriendsAPI.swift in Sources */,
+=======
+>>>>>>> parent of 8ae9743 (lesson2-24-10-2021)
 				FC1831B5263453EB00C84233 /* SceneDelegate.swift in Sources */,
 				FC780E5D2642C262008195DA /* NewsTableViewController.swift in Sources */,
 				FC780E592642C23F008195DA /* MyGroupTableViewController.swift in Sources */,
@@ -468,7 +459,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3URWZ98WAT;
 				INFOPLIST_FILE = AksenovaMV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,7 +478,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3URWZ98WAT;
 				INFOPLIST_FILE = AksenovaMV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
