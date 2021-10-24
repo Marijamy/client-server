@@ -33,6 +33,7 @@
 		FC780E86264D5D38008195DA /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC780E84264D5D38008195DA /* CustomCollectionViewCell.swift */; };
 		FC780E87264D5D38008195DA /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC780E85264D5D38008195DA /* CustomCollectionViewCell.xib */; };
 		FC9E71002700BB38008D1AB5 /* MySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E70FF2700BB38008D1AB5 /* MySession.swift */; };
+		FC9E7102270A3659008D1AB5 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E7101270A3659008D1AB5 /* NetworkingService.swift */; };
 		FC9E710427123223008D1AB5 /* FriendsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9E710327123223008D1AB5 /* FriendsAPI.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		FC780E84264D5D38008195DA /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC780E85264D5D38008195DA /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		FC9E70FF2700BB38008D1AB5 /* MySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySession.swift; sourceTree = "<group>"; };
+		FC9E7101270A3659008D1AB5 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		FC9E710327123223008D1AB5 /* FriendsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsAPI.swift; sourceTree = "<group>"; };
 		FDA83F96B422CF67D084DC44 /* Pods-AksenovaMV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AksenovaMV.debug.xcconfig"; path = "Target Support Files/Pods-AksenovaMV/Pods-AksenovaMV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				FC1831B4263453EB00C84233 /* SceneDelegate.swift */,
 				FC1831B6263453EB00C84233 /* ViewController.swift */,
 				FC780E7B2642C7F2008195DA /* CustomTabBarController.swift */,
+				FC9E7101270A3659008D1AB5 /* NetworkingService.swift */,
 				FC1831B8263453EB00C84233 /* Main.storyboard */,
 				FC1831BB263453ED00C84233 /* Assets.xcassets */,
 				FC1831BD263453ED00C84233 /* LaunchScreen.storyboard */,
@@ -317,6 +320,7 @@
 				FC780E572642C228008195DA /* FriendsTableViewController.swift in Sources */,
 				FC780E642642C2C4008195DA /* User.swift in Sources */,
 				FC9E710427123223008D1AB5 /* FriendsAPI.swift in Sources */,
+				FC9E7102270A3659008D1AB5 /* NetworkingService.swift in Sources */,
 				FC1831B5263453EB00C84233 /* SceneDelegate.swift in Sources */,
 				FC780E5D2642C262008195DA /* NewsTableViewController.swift in Sources */,
 				FC780E592642C23F008195DA /* MyGroupTableViewController.swift in Sources */,
