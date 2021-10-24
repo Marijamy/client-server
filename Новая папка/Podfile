@@ -7,4 +7,6 @@ target 'AksenovaMV' do
 
   # Pods for AksenovaMV
 
+  pod 'Alamofire'
+
 end

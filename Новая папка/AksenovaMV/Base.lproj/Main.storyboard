@@ -58,40 +58,21 @@
                                             <wkPreferences key="preferences"/>
                                         </wkWebViewConfiguration>
                                     </wkWebView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSl-WJ-xz0">
-                                        <rect key="frame" x="172" y="392" width="70" height="34"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" buttonSize="medium">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Вход">
-                                                    <attributes>
-                                                        <font key="NSFont" size="15" name="Helvetica"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="pressButtonWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gza-5D-4Ey"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8fJ-NF-k3m" firstAttribute="leading" secondItem="zHG-yh-7uh" secondAttribute="leading" constant="50" id="3EA-SA-0cP"/>
                                     <constraint firstAttribute="trailing" secondItem="8fJ-NF-k3m" secondAttribute="trailing" constant="50" id="4bQ-qO-zRR"/>
                                     <constraint firstItem="8fJ-NF-k3m" firstAttribute="top" secondItem="JWC-GV-phf" secondAttribute="bottom" constant="30" id="EEi-dV-8jb"/>
-                                    <constraint firstAttribute="trailing" secondItem="sSl-WJ-xz0" secondAttribute="trailing" constant="172" id="GRv-No-uIP"/>
                                     <constraint firstItem="p0o-x4-Xg5" firstAttribute="leading" secondItem="zHG-yh-7uh" secondAttribute="leading" constant="173" id="GS1-9z-fdo"/>
                                     <constraint firstItem="JWC-GV-phf" firstAttribute="leading" secondItem="zHG-yh-7uh" secondAttribute="leading" constant="165" id="HPI-eM-eU1"/>
                                     <constraint firstItem="95q-O5-flq" firstAttribute="top" secondItem="p0o-x4-Xg5" secondAttribute="bottom" constant="28" id="Izz-zk-3sa"/>
                                     <constraint firstItem="p0o-x4-Xg5" firstAttribute="top" secondItem="8fJ-NF-k3m" secondAttribute="bottom" constant="42" id="KTV-OJ-EAK"/>
-                                    <constraint firstItem="sSl-WJ-xz0" firstAttribute="leading" secondItem="zHG-yh-7uh" secondAttribute="leading" constant="172" id="LMk-8d-ERL"/>
                                     <constraint firstAttribute="trailing" secondItem="95q-O5-flq" secondAttribute="trailing" constant="62" id="MOQ-Ne-DgS"/>
                                     <constraint firstItem="JWC-GV-phf" firstAttribute="top" secondItem="2Ap-h1-Oid" secondAttribute="bottom" constant="43" id="TOY-Ox-bjT"/>
                                     <constraint firstItem="2Ap-h1-Oid" firstAttribute="leading" secondItem="zHG-yh-7uh" secondAttribute="leading" constant="158" id="U5j-ID-RVZ"/>
                                     <constraint firstAttribute="trailing" secondItem="2Ap-h1-Oid" secondAttribute="trailing" constant="157" id="WRw-KY-dUG"/>
                                     <constraint firstAttribute="trailing" secondItem="JWC-GV-phf" secondAttribute="trailing" constant="164" id="au9-dA-1cG"/>
                                     <constraint firstAttribute="trailing" secondItem="p0o-x4-Xg5" secondAttribute="trailing" constant="172" id="eMR-69-q7l"/>
-                                    <constraint firstItem="sSl-WJ-xz0" firstAttribute="top" secondItem="95q-O5-flq" secondAttribute="bottom" constant="36" id="hpw-uI-wDW"/>
                                     <constraint firstItem="95q-O5-flq" firstAttribute="leading" secondItem="zHG-yh-7uh" secondAttribute="leading" constant="47" id="jec-Gv-yLB"/>
                                     <constraint firstItem="2Ap-h1-Oid" firstAttribute="top" secondItem="zHG-yh-7uh" secondAttribute="top" constant="74" id="rhw-7E-s0L"/>
                                 </constraints>

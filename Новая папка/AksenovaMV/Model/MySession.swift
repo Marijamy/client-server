@@ -7,15 +7,13 @@
 
 import Foundation
 
-import UIKit
-
 final class MySession {
 
     private init() {}
 
     static let shared = MySession()
 
-    var token: String = ""
-    var userId: Int = 0
+    var token: String? = ""
+    var userId: Int? = 0
 
 }
